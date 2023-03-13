@@ -337,17 +337,17 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10) 1 active monitor speaker
+Thing 10) game console
 5 properties:
-    1) high frequency driver (tweeter)
-    2) mid/low frequency driver
-    3) front panel
-    4) back panel
-    5) amp
+    1) controller
+    2) AC adapter
+    3) disc drive
+    4) WiFi MOdule
+    5) Front Panel
 3 things it can do:
-    1) convert electrical energy into mechanical energy
-    2) amplify an electrical signal
-    3) take up space in a room or on a desk
+    1) display Movies and Games on TV or Monitor
+    2) Output Audio
+    3) receive input signals from different types of Controllers
  */
 
  /*
@@ -434,7 +434,19 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
+Thing 5) high frequency driver (tweeter)
+5 properties:
+    1) membrane
+    2) pole piece
+    3) magnet
+    4) pole plate
+    5) back plate
+3 things it can do:
+    1) convert high freuencies of electrical energy into mechanical energy
+    2) 
+    3)
+
+Thing 6) mid/low frequency driver
 5 properties:
     1)
     2)
@@ -446,7 +458,7 @@ Thing 5)
     2)
     3)
 
-Thing 6)
+Thing 7) front panel
 5 properties:
     1)
     2)
@@ -458,7 +470,7 @@ Thing 6)
     2)
     3)
 
-Thing 7)
+Thing 8) back panel
 5 properties:
     1)
     2)
@@ -470,19 +482,7 @@ Thing 7)
     2)
     3)
 
-Thing 8)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 9)
+Thing 9) amp
 5 properties:
     1)
     2)
