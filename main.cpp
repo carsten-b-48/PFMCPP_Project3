@@ -198,14 +198,14 @@ Part 1b - Step 2: Assignment
 
 Thing 1) kitchen
 5 properties:
-    1) has a stove
+    1) number of stoves
     2) number of seats
-    3) has a table
-    4) has a kitchen counter
+    3) size of the table
+    4) color of kitchen sink
     5) number of kitchen cabinets
 3 things it can do:
     1) prepare food
-    2) bake a cake (if hase a stove = true)
+    2) bake a cake 
     3) clean dishes
 
 Thing 2) bicycle
@@ -224,9 +224,9 @@ Thing 3) mixing desk
 5 properties:
     1) number of channels
     2) number of analog inputs
-    3) has separate control room output
+    3) number of outputs
     4) number of eq bands per each channel
-    5) has a master compressor
+    5) number of compressors
 3 things it can do:
     1) record instruments
     2) filter audiosignals
@@ -236,13 +236,13 @@ Thing 4) MIDI Control Keyboard
 5 properties:
     1) number of keys
     2) number of knobs
-    3) has a pitch wheel
+    3) display size
     4) number of sliders
-    5) has separate MIDI output
+    5) number of separate MIDI output
 3 things it can do:
     1) control parameters of synthesizers
-    2) send MIDI signals to other devices (if has separate MIDI output = true)
-    3) send note on commands to compatible devices
+    2) send MIDI signals to other devices 
+    3) send note on and note off commands to compatible devices
 */
 
 /*
