@@ -337,17 +337,17 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10)
+Thing 10) 1 active monitor speaker
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) high frequency driver (tweeter)
+    2) mid/low frequency driver
+    3) front panel
+    4) back panel
+    5) amp
 3 things it can do:
-    1)
-    2)
-    3)
+    1) convert electrical energy into mechanical energy
+    2) amplify an electrical signal
+    3) take up space in a room or on a desk
  */
 
  /*
