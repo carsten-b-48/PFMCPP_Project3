@@ -434,65 +434,65 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5) high frequency driver (tweeter)
+Thing 5) controller
 5 properties:
-    1) membrane
-    2) pole piece
-    3) magnet
-    4) pole plate
-    5) back plate
+    1) number of analog sticks
+    2) number of inputs for headset
+    3) has built in speaker
+    4) number of shoulder buttons
+    5) is without cable
 3 things it can do:
-    1) convert high freuencies of electrical energy into mechanical energy
-    2) 
-    3)
+    1) convert physical movements to electrical signal
+    2) play audio through built in speaker 
+    3) connect to other person via audio
 
-Thing 6) mid/low frequency driver
+Thing 6) AC adapter
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) has rectifier
+    2) strength of smoothing capacitor
+    3) has a MOSFET
+    4) has transformer
+    5) has control electronics
 3 things it can do:
-    1)
-    2)
-    3)
+    1) convert main electrical voltage into lower voltage
+    2) converts AC into DC
+    3) generates heat
 
-Thing 7) front panel
+Thing 7) disc drive
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) has disc tray
+    2) laser strength
+    3) electrial engine power
+    4) type of disc
+    5) type of internal connection
 3 things it can do:
-    1)
-    2)
-    3)
+    1) loads disc into drive
+    2) spin drive
+    3) read date of disc
 
-Thing 8) back panel
+Thing 8) WiFi Module
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) is external via USB connectable
+    2) frequency standard 5 MHz
+    3) signal strength 
+    4) needed voltage 
+    5) needed amperage
 3 things it can do:
-    1)
-    2)
-    3)
+    1) send cableless digital data
+    2) receive cableless digital data
+    3) adds WiFi compatibility to game console
 
-Thing 9) amp
+Thing 9) Front Panel
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) Slot for disc tray
+    2) number of USB ports
+    3) number of controller ports
+    4) on/off Button
+    5) number of ports for memory card
 3 things it can do:
-    1)
-    2)
-    3)
+    1) it sets the visible design
+    2) is removable
+    3) connects to different inout types
  */
 
 /*
