@@ -435,7 +435,7 @@ Thing 1) kitchen
 5 properties:
     1) number of stoves (int)
     2) number of seats (int)
-    3) size of the table in sqare meter (float)
+    3) size of the table in square meter (float)
     4) color of kitchen sink (std::string)
     5) number of kitchen cabinets (int)
 3 things it can do:
@@ -452,7 +452,7 @@ Thing 2) bicycle
     5) type of handlebar (std::string)
 3 things it can do:
     1) look cool
-    2) be stable 
+    2) use a human being as engine 
     3) roll
 
 Thing 3) mixing desk
@@ -473,19 +473,19 @@ Thing 4) MIDI Control Keyboard
     2) number of knobs (int)
     3) display size (double)
     4) number of sliders (int)
-    5) number of separate MIDI output (int)
+    5) number of separate MIDI outputs (int)
 3 things it can do:
     1) control parameters of synthesizers
     2) send MIDI signals to other devices 
     3) send note on and note off commands to compatible devices
 
-Thing 5) controller
+Thing 5) game controller
 5 properties:
     1) number of analog sticks (int)
-    2) number of inputs for headset (int)
+    2) number of inputs for headsets (int)
     3) has built in speaker (bool)
     4) number of shoulder buttons (int)
-    5) is without cable (bool)
+    5) is wireless (bool)
 3 things it can do:
     1) convert physical movements to electrical signal
     2) play audio through built in speaker 
@@ -494,7 +494,7 @@ Thing 5) controller
 Thing 6) AC adapter
 5 properties:
     1) has rectifier (bool)
-    2) strength of smoothing capacitor (int) microfarad (μF) or millifarad (mF).
+    2) strength of smoothing capacitor (int) in microfarad μF or millifarad mF.
     3) has a MOSFET (bool)
     4) has transformer (bool)
     5) has control electronics (bool)
@@ -517,14 +517,14 @@ Thing 7) disc drive
 
 Thing 8) WiFi Module
 5 properties:
-    1) is external via USB connectable (bool)
+    1) is external and via USB connectable (bool)
     2) frequency standard 5 MHz (bool)
     3) signal strength in decibel milliwatts (float)
     4) needed voltage (float)
     5) needed amperage (float)
 3 things it can do:
-    1) send cableless digital data
-    2) receive cableless digital data
+    1) send wireless digital data
+    2) receive wireless digital data
     3) adds WiFi compatibility to game console
 
 Thing 9) Front Panel
@@ -537,11 +537,11 @@ Thing 9) Front Panel
 3 things it can do:
     1) it sets the visible design
     2) is removable
-    3) connects to different inout types
+    3) connect to different input devices
 
 Thing 10) game console
 5 properties:
-    1) controller
+    1) game controller
     2) AC adapter
     3) disc drive
     4) WiFi MOdule
