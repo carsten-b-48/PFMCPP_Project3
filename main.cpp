@@ -198,11 +198,11 @@ Part 1b - Step 2: Assignment
 
 Thing 1) kitchen
 5 properties:
-    1) number of stoves
-    2) number of seats
-    3) size of the table
-    4) color of kitchen sink
-    5) number of kitchen cabinets
+    1) number of stoves (int)
+    2) number of seats (int)
+    3) size of the table in sqare meter (float)
+    4) color of kitchen sink (std::string)
+    5) number of kitchen cabinets (int)
 3 things it can do:
     1) prepare food
     2) bake a cake 
@@ -210,11 +210,11 @@ Thing 1) kitchen
 
 Thing 2) bicycle
 5 properties:
-    1) number of wheels
-    2) type of material for frame
-    3) number of gears
-    4) number of brakes
-    5) type of handlebar
+    1) number of wheels (int)
+    2) type of material for frame (std::string)
+    3) number of gears (int)
+    4) number of brakes (int)
+    5) type of handlebar (std::string)
 3 things it can do:
     1) look cool
     2) be stable 
@@ -222,11 +222,11 @@ Thing 2) bicycle
 
 Thing 3) mixing desk
 5 properties:
-    1) number of channels
-    2) number of analog inputs
-    3) number of outputs
-    4) number of eq bands per each channel
-    5) number of compressors
+    1) number of channels (int)
+    2) number of analog inputs (int)
+    3) number of outputs (int)
+    4) number of eq bands per channel (int)
+    5) brand of  Mixer (std::string)
 3 things it can do:
     1) record instruments
     2) filter audiosignals
@@ -234,11 +234,11 @@ Thing 3) mixing desk
 
 Thing 4) MIDI Control Keyboard
 5 properties:
-    1) number of keys
-    2) number of knobs
-    3) display size
-    4) number of sliders
-    5) number of separate MIDI output
+    1) number of keys (int)
+    2) number of knobs (int)
+    3) display size (double)
+    4) number of sliders (int)
+    5) number of separate MIDI output (int)
 3 things it can do:
     1) control parameters of synthesizers
     2) send MIDI signals to other devices 
