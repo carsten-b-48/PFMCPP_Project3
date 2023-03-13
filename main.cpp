@@ -483,9 +483,9 @@ Thing 5) game controller
 5 properties:
     1) number of analog sticks (int)
     2) number of inputs for headsets (int)
-    3) has built in speaker (bool)
+    3) Battery capacity in mAh (int)
     4) number of shoulder buttons (int)
-    5) is wireless (bool)
+    5) width in cm (int)
 3 things it can do:
     1) convert physical movements to electrical signal
     2) play audio through built in speaker 
@@ -493,11 +493,11 @@ Thing 5) game controller
 
 Thing 6) AC adapter
 5 properties:
-    1) has rectifier (bool)
+    1) max efficiency of rectifier in percent (double)
     2) strength of smoothing capacitor (int) in microfarad μF or millifarad mF.
-    3) has a MOSFET (bool)
-    4) has transformer (bool)
-    5) has control electronics (bool)
+    3) MOSFET type (std::string)
+    4) transformer unit type (std::string)
+    5) number of resistors (int)
 3 things it can do:
     1) convert main electrical voltage into lower voltage
     2) converts AC into DC
@@ -505,7 +505,7 @@ Thing 6) AC adapter
 
 Thing 7) disc drive
 5 properties:
-    1) has disc tray (bool)
+    1) loading type (std::string)
     2) laser strength pulse output in mW (int)
     3) electrial engine power in Watt (double)
     4) type of disc (std::string)
@@ -517,8 +517,8 @@ Thing 7) disc drive
 
 Thing 8) WiFi Module
 5 properties:
-    1) is external and via USB connectable (bool)
-    2) frequency standard 5 MHz (bool)
+    1) connectable via USB (bool)
+    2) frequency standard 5 GHz compatible (bool)
     3) signal strength in decibel milliwatts (float)
     4) needed voltage (float)
     5) needed amperage (float)
@@ -529,10 +529,10 @@ Thing 8) WiFi Module
 
 Thing 9) Front Panel
 5 properties:
-    1) Slot for disc tray (bool)
+    1) does have Slot for disc tray (bool)
     2) number of USB ports (int)
     3) number of controller ports (int)
-    4) on/off Button (bool)
+    4) brand name (std::string)
     5) number of ports for memory card (int)
 3 things it can do:
     1) it sets the visible design
