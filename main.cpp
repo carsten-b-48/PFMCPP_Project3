@@ -436,11 +436,11 @@ example:
 
 Thing 5) controller
 5 properties:
-    1) number of analog sticks
-    2) number of inputs for headset
-    3) has built in speaker
-    4) number of shoulder buttons
-    5) is without cable
+    1) number of analog sticks (int)
+    2) number of inputs for headset (int)
+    3) has built in speaker (bool)
+    4) number of shoulder buttons (int)
+    5) is without cable (bool)
 3 things it can do:
     1) convert physical movements to electrical signal
     2) play audio through built in speaker 
@@ -448,11 +448,11 @@ Thing 5) controller
 
 Thing 6) AC adapter
 5 properties:
-    1) has rectifier
-    2) strength of smoothing capacitor
-    3) has a MOSFET
-    4) has transformer
-    5) has control electronics
+    1) has rectifier (bool)
+    2) strength of smoothing capacitor (int) microfarad (μF) or millifarad (mF).
+    3) has a MOSFET (bool)
+    4) has transformer (bool)
+    5) has control electronics (bool)
 3 things it can do:
     1) convert main electrical voltage into lower voltage
     2) converts AC into DC
@@ -460,11 +460,11 @@ Thing 6) AC adapter
 
 Thing 7) disc drive
 5 properties:
-    1) has disc tray
-    2) laser strength
-    3) electrial engine power
-    4) type of disc
-    5) type of internal connection
+    1) has disc tray (bool)
+    2) laser strength pulse output in mW (int)
+    3) electrial engine power in Watt (double)
+    4) type of disc (std::string)
+    5) type of internal connection (std::string)
 3 things it can do:
     1) loads disc into drive
     2) spin drive
@@ -472,11 +472,11 @@ Thing 7) disc drive
 
 Thing 8) WiFi Module
 5 properties:
-    1) is external via USB connectable
-    2) frequency standard 5 MHz
-    3) signal strength 
-    4) needed voltage 
-    5) needed amperage
+    1) is external via USB connectable (bool)
+    2) frequency standard 5 MHz (bool)
+    3) signal strength in decibel milliwatts (float)
+    4) needed voltage (float)
+    5) needed amperage (float)
 3 things it can do:
     1) send cableless digital data
     2) receive cableless digital data
@@ -484,11 +484,11 @@ Thing 8) WiFi Module
 
 Thing 9) Front Panel
 5 properties:
-    1) Slot for disc tray
-    2) number of USB ports
-    3) number of controller ports
-    4) on/off Button
-    5) number of ports for memory card
+    1) Slot for disc tray (bool)
+    2) number of USB ports (int)
+    3) number of controller ports (int)
+    4) on/off Button (bool)
+    5) number of ports for memory card (int)
 3 things it can do:
     1) it sets the visible design
     2) is removable
