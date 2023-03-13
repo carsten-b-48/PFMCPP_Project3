@@ -196,53 +196,53 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
+Thing 1) kitchen
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) has a stove
+    2) number of seats
+    3) has a table
+    4) has a kitchen counter
+    5) number of kitchen cabinets
 3 things it can do:
-    1)
-    2)
-    3)
+    1) prepare food
+    2) bake a cake (if hase a stove = true)
+    3) clean dishes
 
-Thing 2)
+Thing 2) bicycle
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of wheels
+    2) type of material for frame
+    3) number of gears
+    4) number of brakes
+    5) type of handlebar
 3 things it can do:
-    1)
-    2)
-    3)
+    1) look cool
+    2) be stable 
+    3) roll
 
-Thing 3)
+Thing 3) mixing desk
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of channels
+    2) number of analog inputs
+    3) has separate control room output
+    4) number of eq bands per each channel
+    5) has a master compressor
 3 things it can do:
-    1)
-    2)
-    3)
+    1) record instruments
+    2) filter audiosignals
+    3) compress audio signals
 
-Thing 4)
+Thing 4) MIDI Control Keyboard
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of keys
+    2) number of knobs
+    3) has a pitch wheel
+    4) number of sliders
+    5) has separate MIDI output
 3 things it can do:
-    1)
-    2)
-    3)
+    1) control parameters of synthesizers
+    2) send MIDI signals to other devices (if has separate MIDI output = true)
+    3) send note on commands to compatible devices
 */
 
 /*
