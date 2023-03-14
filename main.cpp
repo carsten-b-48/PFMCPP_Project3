@@ -432,124 +432,34 @@ MOVE THEM to the space below this block comment and put them in numerical order
 */
 
 Thing 1) kitchen
-5 properties:
-    1) number of stoves (int)
-    2) number of seats (int)
-    3) size of the table in square meter (float)
-    4) color of kitchen sink (std::string)
-    5) number of kitchen cabinets (int)
-3 things it can do:
-    1) prepare food
-    2) bake a cake 
-    3) clean dishes
+
 
 Thing 2) bicycle
-5 properties:
-    1) number of wheels (int)
-    2) type of material for frame (std::string)
-    3) number of gears (int)
-    4) number of brakes (int)
-    5) type of handlebar (std::string)
-3 things it can do:
-    1) look cool
-    2) use a human being as engine 
-    3) roll
+
 
 Thing 3) mixing desk
-5 properties:
-    1) number of channels (int)
-    2) number of analog inputs (int)
-    3) number of outputs (int)
-    4) number of eq bands per channel (int)
-    5) brand of  Mixer (std::string)
-3 things it can do:
-    1) record instruments
-    2) filter audiosignals
-    3) compress audio signals
+
 
 Thing 4) MIDI Control Keyboard
-5 properties:
-    1) number of keys (int)
-    2) number of knobs (int)
-    3) display size (double)
-    4) number of sliders (int)
-    5) number of separate MIDI outputs (int)
-3 things it can do:
-    1) control parameters of synthesizers
-    2) send MIDI signals to other devices 
-    3) send note on and note off commands to compatible devices
+
 
 Thing 5) game controller
-5 properties:
-    1) number of analog sticks (int)
-    2) number of inputs for headsets (int)
-    3) Battery capacity in mAh (int)
-    4) number of shoulder buttons (int)
-    5) width in cm (int)
-3 things it can do:
-    1) convert physical movements to electrical signal
-    2) play audio through built in speaker 
-    3) connect to other person via audio
+
 
 Thing 6) AC adapter
-5 properties:
-    1) max efficiency of rectifier in percent (double)
-    2) strength of smoothing capacitor (int) in microfarad μF or millifarad mF.
-    3) MOSFET type (std::string)
-    4) transformer unit type (std::string)
-    5) number of resistors (int)
-3 things it can do:
-    1) convert main electrical voltage into lower voltage
-    2) converts AC into DC
-    3) generates heat
+
 
 Thing 7) disc drive
-5 properties:
-    1) loading type (std::string)
-    2) laser strength pulse output in mW (int)
-    3) electrial engine power in Watt (double)
-    4) type of disc (std::string)
-    5) type of internal connection (std::string)
-3 things it can do:
-    1) loads disc into drive
-    2) spin drive
-    3) read date of disc
+
 
 Thing 8) WiFi Module
-5 properties:
-    1) connectable via USB (bool)
-    2) frequency standard 5 GHz compatible (bool)
-    3) signal strength in decibel milliwatts (float)
-    4) needed voltage (float)
-    5) needed amperage (float)
-3 things it can do:
-    1) send wireless digital data
-    2) receive wireless digital data
-    3) adds WiFi compatibility to game console
+
 
 Thing 9) Front Panel
-5 properties:
-    1) does have Slot for disc tray (bool)
-    2) number of USB ports (int)
-    3) number of controller ports (int)
-    4) brand name (std::string)
-    5) number of ports for memory card (int)
-3 things it can do:
-    1) it sets the visible design
-    2) is removable
-    3) connect to different input devices
+
 
 Thing 10) game console
-5 properties:
-    1) game controller
-    2) AC adapter
-    3) disc drive
-    4) WiFi MOdule
-    5) Front Panel
-3 things it can do:
-    1) display Movies and Games on TV or Monitor
-    2) Output Audio
-    3) receive input signals from different types of Controllers
+
 
 /*
 =================
@@ -620,52 +530,142 @@ Notice that the struct name 'CarWash' conforms with the Course Coding Standard, 
 
 struct Kitchen
 {
-    
+//     5 properties:
+//     1) number of stoves (int)
+//     2) number of seats (int)
+//     3) size of the table in square meter (float)
+//     4) color of kitchen sink (std::string)
+//     5) number of kitchen cabinets (int)
+// 3 things it can do:
+//     1) prepare food
+//     2) bake a cake 
+//     3) clean dishes
 };
 
 struct Bicycle
 {
-    
+//     5 properties:
+//     1) number of wheels (int)
+//     2) type of material for frame (std::string)
+//     3) number of gears (int)
+//     4) number of brakes (int)
+//     5) type of handlebar (std::string)
+// 3 things it can do:
+//     1) look cool
+//     2) use a human being as engine 
+//     3) roll
 };
 
 struct MixingDesk
 {
-    
+//   5 properties:
+//     1) number of channels (int)
+//     2) number of analog inputs (int)
+//     3) number of outputs (int)
+//     4) number of eq bands per channel (int)
+//     5) brand of  Mixer (std::string)
+// 3 things it can do:
+//     1) record instruments
+//     2) filter audiosignals
+//     3) compress audio signals  
 };
 
 struct ControllerKeyboard
 {
-    
+//   5 properties:
+//     1) number of keys (int)
+//     2) number of knobs (int)
+//     3) display size (double)
+//     4) number of sliders (int)
+//     5) number of separate MIDI outputs (int)
+// 3 things it can do:
+//     1) control parameters of synthesizers
+//     2) send MIDI signals to other devices 
+//     3) send note on and note off commands to compatible devices  
 };
 
 struct GameController
 {
-    
+//    5 properties:
+//     1) number of analog sticks (int)
+//     2) number of inputs for headsets (int)
+//     3) Battery capacity in mAh (int)
+//     4) number of shoulder buttons (int)
+//     5) width in cm (int)
+// 3 things it can do:
+//     1) convert physical movements to electrical signal
+//     2) play audio through built in speaker 
+//     3) connect to other person via audio 
 };
 
 struct ACAdapter
 {
-    
+//     5 properties:
+//     1) max efficiency of rectifier in percent (double)
+//     2) strength of smoothing capacitor (int) in microfarad μF or millifarad mF.
+//     3) MOSFET type (std::string)
+//     4) transformer unit type (std::string)
+//     5) number of resistors (int)
+// 3 things it can do:
+//     1) convert main electrical voltage into lower voltage
+//     2) converts AC into DC
+//     3) generates heat
 };
 
 struct DiscDrive
 {
-    
+//     5 properties:
+//     1) loading type (std::string)
+//     2) laser strength pulse output in mW (int)
+//     3) electrial engine power in Watt (double)
+//     4) type of disc (std::string)
+//     5) type of internal connection (std::string)
+// 3 things it can do:
+//     1) loads disc into drive
+//     2) spin drive
+//     3) read date of disc
 };
 
 struct WiFiModule
 {
-    
+//     5 properties:
+//     1) connectable via USB (bool)
+//     2) frequency standard 5 GHz compatible (bool)
+//     3) signal strength in decibel milliwatts (float)
+//     4) needed voltage (float)
+//     5) needed amperage (float)
+// 3 things it can do:
+//     1) send wireless digital data
+//     2) receive wireless digital data
+//     3) adds WiFi compatibility to game console
 };
 
 struct FrontPanel
 {
-    
+//   5 properties:
+//     1) does have Slot for disc tray (bool)
+//     2) number of USB ports (int)
+//     3) number of controller ports (int)
+//     4) brand name (std::string)
+//     5) number of ports for memory card (int)
+// 3 things it can do:
+//     1) it sets the visible design
+//     2) is removable
+//     3) connect to different input devices  
 };
 
 struct GameConsole
 {
-    
+//     5 properties:
+//     1) game controller
+//     2) AC adapter
+//     3) disc drive
+//     4) WiFi MOdule
+//     5) Front Panel
+// 3 things it can do:
+//     1) display Movies and Games on TV or Monitor
+//     2) Output Audio
+//     3) receive input signals from different types of Controllers
 };
     
 /*
