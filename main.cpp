@@ -543,8 +543,11 @@ struct Kitchen
     int numKitchenCabinets = 3;
 // 3 things it can do:
 //     1) prepare food
+    void prepareFood();
 //     2) bake a cake 
+    void bakeCake();
 //     3) clean dishes
+    void cleanDishes();
 };
 
 struct Bicycle
@@ -562,8 +565,11 @@ struct Bicycle
     std::string typeHandlebar = "Track Bike";
 // 3 things it can do:
 //     1) look cool
+    bool lookCool(int numLikes, int numVotes); // returns true is most people really like it
 //     2) use a human being as engine 
+    std::string typeOfEngine(); // Returns the type of Engine, might electronic or other engine
 //     3) roll
+    void rollInAnyDirection();
 };
 
 struct MixingDesk
@@ -581,8 +587,11 @@ struct MixingDesk
     std::string brandMixer = "Soundcraft";
 // 3 things it can do:
 //     1) record instruments
+    void recordInstrument();
 //     2) filter audiosignals
-//     3) compress audio signals  
+    void filterAudio();
+//     3) compress audio signals
+    void compressAudio();
 };
 
 struct ControllerKeyboard
@@ -600,8 +609,11 @@ struct ControllerKeyboard
     int numMIDIOuts = 2;
 // 3 things it can do:
 //     1) control parameters of synthesizers
+    void controlParams(int numParameter, int paramValue);
 //     2) send MIDI signals to other devices 
+    void sendMIDI();
 //     3) send note on and note off commands to compatible devices  
+    void noteOn(int keyNumber, int velocityValue);
 };
 
 struct GameController
@@ -619,8 +631,11 @@ struct GameController
     double width = 13.5;
 // 3 things it can do:
 //     1) convert physical movements to electrical signal
+    float convertMovement(float physMovement); // returns the value of coordinates the mouse courser has to be moved
 //     2) play audio through built in speaker 
+    void playAudio(int trackID, int volume);
 //     3) connect to other person via audio 
+    bool connectTeam(std::string playerName); // returns true if connection was successful
 };
 
 struct ACAdapter
@@ -638,8 +653,11 @@ struct ACAdapter
     int numResistors = 13;
 // 3 things it can do:
 //     1) convert main electrical voltage into lower voltage
+    void convMainVoltToLowerVolt(float mainVolt,float targetVolt);
 //     2) converts AC into DC
+    void convACDC();
 //     3) generates heat
+    double getTemperature(); // returns the Temperature in Celsius
 };
 
 struct DiscDrive
@@ -657,8 +675,11 @@ struct DiscDrive
     std::string typeConnector ="SATA";
 // 3 things it can do:
 //     1) loads disc into drive
+    void loadDisc(std::string typeLoading);
 //     2) spin drive
-//     3) read date of disc
+    void spinDrive(int speedDrive);
+//     3) read data of disc
+    int readData(); // returns the Data which is read
 };
 
 struct WiFiModule
@@ -676,8 +697,11 @@ struct WiFiModule
     int minAmper = 500;
 // 3 things it can do:
 //     1) send wireless digital data
+    void sendData(std::string myData);
 //     2) receive wireless digital data
+    std::string receiveData(); //returns the Data which is received
 //     3) adds WiFi compatibility to game console
+    bool installDriver(); //returns true if driver is installed and WiFi Adapter is working
 };
 
 struct FrontPanel
@@ -695,8 +719,11 @@ struct FrontPanel
     int numMemPorts = 2;
 // 3 things it can do:
 //     1) it sets the visible design
+    void setDesign();
 //     2) is removable
-//     3) connect to different input devices  
+    bool removePanel(); // returns true if Panel was removed
+//     3) connect to different input devices 
+    std::string connectInputDevice(); // Returns the Name of the connected device
 };
 
 struct GameConsole
@@ -714,8 +741,11 @@ struct GameConsole
     FrontPanel frontPanel;
 // 3 things it can do:
 //     1) display Movies and Games on TV or Monitor
+    void displayDevice(std::string television);
 //     2) Output Audio
+    void playAudio(int volume);
 //     3) receive input signals from different types of Controllers
+    int controllerInput(); // returns all received values 
 };
     
 /*
