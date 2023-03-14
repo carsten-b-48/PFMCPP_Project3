@@ -548,6 +548,19 @@ struct Kitchen
     void bakeCake();
 //     3) clean dishes
     void cleanDishes();
+
+    struct Pasta
+    {
+        std::string pastaManufacturer = "Barilla";
+        std::string pastaType = "Farfalle";
+        int cookingTime = 12;
+        bool vegan = true;
+        std::string typeSauce = "Pesto Rosso";
+
+        void cookPasta (int cookingTime,int stoveLevel, std::string typePot);
+        int getNumOfHungryPeople(std::string whoIsHungry); // returns the number of people who will eat
+        void setTable (int numHungryPeople, std::string typePlates,std::string typeGlasses);
+    };
 };
 
 struct Bicycle
@@ -570,6 +583,20 @@ struct Bicycle
     std::string typeOfEngine(); // Returns the type of Engine, might electronic or other engine
 //     3) roll
     void rollInAnyDirection();
+
+    struct TrackRace
+    {
+        std::string raceLocation = "Frankfurt";
+        std::string typeTrackSurface = "Wood";
+        int numRacers = 2;
+        float trackwidth = 7.5f;
+        float trackLength = 250.f;
+
+        void prepareForStart(float startPosTrackLength,float startPosTrackWidthRacerOne,float startPosTrackWidthRacerTwo);
+        void raceStart (int setRounds = 2, std::string setRaceType = "Sprint");
+        std::string sprintWinner(float timeRacerOne, float timeRacerTwo, std::string nameRacerOne, std::string nameRacerTwo); //returns Name of the Winner  
+    };
+
 };
 
 struct MixingDesk
