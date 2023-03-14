@@ -431,34 +431,34 @@ MOVE THEM to the space below this block comment and put them in numerical order
     simply CUT and PASTE them in the space provided below:
 */
 
-Thing 1) kitchen
+// Thing 1) kitchen
 
 
-Thing 2) bicycle
+// Thing 2) bicycle
 
 
-Thing 3) mixing desk
+// Thing 3) mixing desk
 
 
-Thing 4) MIDI Control Keyboard
+// Thing 4) MIDI Control Keyboard
 
 
-Thing 5) game controller
+// Thing 5) game controller
 
 
-Thing 6) AC adapter
+// Thing 6) AC adapter
 
 
-Thing 7) disc drive
+// Thing 7) disc drive
 
 
-Thing 8) WiFi Module
+// Thing 8) WiFi Module
 
 
-Thing 9) Front Panel
+// Thing 9) Front Panel
 
 
-Thing 10) game console
+// Thing 10) game console
 
 
 /*
@@ -532,10 +532,15 @@ struct Kitchen
 {
 //     5 properties:
 //     1) number of stoves (int)
+    int numStoves = 2;
 //     2) number of seats (int)
+    int numSeats = 5;
 //     3) size of the table in square meter (float)
+    float sizeTable = 1.45f;
 //     4) color of kitchen sink (std::string)
+    std::string colorKitchenSink = "chrome";
 //     5) number of kitchen cabinets (int)
+    int numKitchenCabinets = 3;
 // 3 things it can do:
 //     1) prepare food
 //     2) bake a cake 
@@ -546,10 +551,15 @@ struct Bicycle
 {
 //     5 properties:
 //     1) number of wheels (int)
+    int numWheels = 2;
 //     2) type of material for frame (std::string)
+    std::string typeMaterialFrame = "steel";
 //     3) number of gears (int)
+    int numGears = 1;
 //     4) number of brakes (int)
+    int numBreaks = 2;
 //     5) type of handlebar (std::string)
+    std::string typeHandlebar = "Track Bike";
 // 3 things it can do:
 //     1) look cool
 //     2) use a human being as engine 
@@ -560,10 +570,15 @@ struct MixingDesk
 {
 //   5 properties:
 //     1) number of channels (int)
+    int numChannels = 8;
 //     2) number of analog inputs (int)
+    int numAnalogInputs = 4;
 //     3) number of outputs (int)
+    int numOutputs = 4;
 //     4) number of eq bands per channel (int)
+    int numEQBandsChannel = 3;
 //     5) brand of  Mixer (std::string)
+    std::string brandMixer = "Soundcraft";
 // 3 things it can do:
 //     1) record instruments
 //     2) filter audiosignals
@@ -574,10 +589,15 @@ struct ControllerKeyboard
 {
 //   5 properties:
 //     1) number of keys (int)
+    int numKeys = 36;
 //     2) number of knobs (int)
+    int numKnobs = 8;
 //     3) display size (double)
+    double sizeDisplay = 7.2;
 //     4) number of sliders (int)
+    int numSliders = 9;
 //     5) number of separate MIDI outputs (int)
+    int numMIDIOuts = 2;
 // 3 things it can do:
 //     1) control parameters of synthesizers
 //     2) send MIDI signals to other devices 
@@ -588,10 +608,15 @@ struct GameController
 {
 //    5 properties:
 //     1) number of analog sticks (int)
+    int numAnalogSticks = 2;
 //     2) number of inputs for headsets (int)
+    int numInputHS = 1;
 //     3) Battery capacity in mAh (int)
+    int capicityBattery = 500;
 //     4) number of shoulder buttons (int)
-//     5) width in cm (int)
+    int numShoulderButtons = 2;
+//     5) width in cm (double)
+    double width = 13.5;
 // 3 things it can do:
 //     1) convert physical movements to electrical signal
 //     2) play audio through built in speaker 
@@ -602,10 +627,15 @@ struct ACAdapter
 {
 //     5 properties:
 //     1) max efficiency of rectifier in percent (double)
-//     2) strength of smoothing capacitor (int) in microfarad μF or millifarad mF.
+    double maxEffRect = 42.5;
+//     2) strength of smoothing capacitor (int) in millifarad mF.
+    int scaleSmmoothCapacitor = 47;
 //     3) MOSFET type (std::string)
+    std::string typeMOSFET= "IRF540";
 //     4) transformer unit type (std::string)
+    std::string typeTransformer = "Ferrite";
 //     5) number of resistors (int)
+    int numResistors = 13;
 // 3 things it can do:
 //     1) convert main electrical voltage into lower voltage
 //     2) converts AC into DC
@@ -616,10 +646,15 @@ struct DiscDrive
 {
 //     5 properties:
 //     1) loading type (std::string)
+    std::string typeLoading ="Slot";
 //     2) laser strength pulse output in mW (int)
+    int powerLaser = 7;
 //     3) electrial engine power in Watt (double)
+    double powerMotor = 1.7;
 //     4) type of disc (std::string)
+    std::string typeDisc = "DVD";
 //     5) type of internal connection (std::string)
+    std::string typeConnector ="SATA";
 // 3 things it can do:
 //     1) loads disc into drive
 //     2) spin drive
@@ -630,10 +665,15 @@ struct WiFiModule
 {
 //     5 properties:
 //     1) connectable via USB (bool)
+    bool connectUSB = true;
 //     2) frequency standard 5 GHz compatible (bool)
-//     3) signal strength in decibel milliwatts (float)
+    bool compatible5GHz = false;
+//     3) minimum signal strength in decibel milliwatts (float)
+    float minAmpSignal = -68.4f;
 //     4) needed voltage (float)
-//     5) needed amperage (float)
+    float minVolt = 4.5f;
+//     5) needed amperage in Milliampere (int)
+    int minAmper = 500;
 // 3 things it can do:
 //     1) send wireless digital data
 //     2) receive wireless digital data
@@ -644,10 +684,15 @@ struct FrontPanel
 {
 //   5 properties:
 //     1) does have Slot for disc tray (bool)
+    bool slotDiscTray = true;
 //     2) number of USB ports (int)
+    int numUSBPorts = 2;
 //     3) number of controller ports (int)
+    int numControllerPorts = 2;
 //     4) brand name (std::string)
+    std::string brandName = "Microsoft";
 //     5) number of ports for memory card (int)
+    int numMemPorts = 2;
 // 3 things it can do:
 //     1) it sets the visible design
 //     2) is removable
@@ -658,10 +703,15 @@ struct GameConsole
 {
 //     5 properties:
 //     1) game controller
+    GameController gameController;
 //     2) AC adapter
+    ACAdapter acAdapter;
 //     3) disc drive
+    DiscDrive discDrive;
 //     4) WiFi MOdule
+    WiFiModule wifiModule;
 //     5) Front Panel
+    FrontPanel frontPanel;
 // 3 things it can do:
 //     1) display Movies and Games on TV or Monitor
 //     2) Output Audio
