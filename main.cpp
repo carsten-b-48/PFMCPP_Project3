@@ -83,51 +83,51 @@ Main Object: Car Interior
         Name 4 nouns you'll find on the [Sub Object]
             1) paddle shifters
             2) 'cruise control' controls
-            3) 
-            4) 
+            3) horn
+            4) 'audio control' controls
         Name 2 actions that the [Sub Object] can do:
             1) adjust cruise control settings.
-            2)
+            2) the horn can blow a loud sound
         
     Sub Object: Instrument Cluster
         Name 4 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
-            4)
+            1) tachometer
+            2) sepeedometer
+            3) fuel gauge
+            4) warning lights
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) show current speed of car
+            2) show status of fuel and if empty
+            3) warn against too little oil (prevent car from damage) 
     
     Sub Object: Environment Controls
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) 'control panel' air condition
+            2) 'control panel' heating
+            3) window regulator
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) cool cabin down
+            2) warm cabin up
+            3) open windows
 
     Sub Object: Infotainment System
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) ON-Button for Infotainment
+            2) Panel for navigation through Infotainment System
+            3) Infotainment Display
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) turn on Infotainment System
+            2) switch between different Radio Channels
+            3) show driving route
 
     Sub Object: Seat 
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) armrest
+            2) inside adjustable mirror stick
+            3) seat pad
         Name 2 actions that the [Sub Object] can do:
-            1)
-            2)
+            1) adjust outside mirror
+            2) sit comfortable
 */
 
 /*
@@ -196,53 +196,7 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
 
-Thing 2)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 3)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 4)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
 */
 
 /*
@@ -337,17 +291,7 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
+
  */
 
  /*
@@ -434,65 +378,7 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
 
-Thing 6)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 7)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 8)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 9)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
  */
 
 /*
@@ -545,11 +431,34 @@ MOVE THEM to the space below this block comment and put them in numerical order
     simply CUT and PASTE them in the space provided below:
 */
 
+// Thing 1) kitchen
 
 
+// Thing 2) bicycle
 
 
+// Thing 3) mixing desk
 
+
+// Thing 4) MIDI Control Keyboard
+
+
+// Thing 5) game controller
+
+
+// Thing 6) AC adapter
+
+
+// Thing 7) disc drive
+
+
+// Thing 8) WiFi Module
+
+
+// Thing 9) Front Panel
+
+
+// Thing 10) game console
 
 
 /*
@@ -614,10 +523,258 @@ struct CarWash  //This is the empty struct, below my plain-English UDT.
 {
                 //notice that no code is written inside the curly braces.
 };
+    
 /*
 Notice that the struct name 'CarWash' conforms with the Course Coding Standard, described in the Readme.MD
 */
 
+struct Kitchen
+{
+//     5 properties:
+//     1) number of stoves (int)
+    int numStoves = 2;
+//     2) number of seats (int)
+    int numSeats = 5;
+//     3) size of the table in square meter (float)
+    float sizeTable = 1.45f;
+//     4) color of kitchen sink (std::string)
+    std::string colorKitchenSink = "chrome";
+//     5) number of kitchen cabinets (int)
+    int numKitchenCabinets = 3;
+// 3 things it can do:
+//     1) prepare food
+    void prepareFood();
+//     2) bake a cake 
+    void bakeCake();
+//     3) clean dishes
+    void cleanDishes();
+
+    struct Pasta
+    {
+        std::string pastaManufacturer = "Barilla";
+        std::string pastaType = "Farfalle";
+        int cookingTime = 12;
+        bool vegan = true;
+        std::string typeSauce = "Pesto Rosso";
+
+        void cookPasta (int cookingTime,int stoveLevel, std::string typePot);
+        int getNumOfHungryPeople(std::string whoIsHungry); // returns the number of people who will eat
+        void setTable (int numHungryPeople, std::string typePlates,std::string typeGlasses);
+    };
+};
+
+struct Bicycle
+{
+//     5 properties:
+//     1) number of wheels (int)
+    int numWheels = 2;
+//     2) type of material for frame (std::string)
+    std::string typeMaterialFrame = "steel";
+//     3) number of gears (int)
+    int numGears = 1;
+//     4) number of brakes (int)
+    int numBreaks = 2;
+//     5) type of handlebar (std::string)
+    std::string typeHandlebar = "Track Bike";
+// 3 things it can do:
+//     1) look cool
+    bool lookCool(int numLikes, int numVotes); // returns true is most people really like it
+//     2) use a human being as engine 
+    std::string typeOfEngine(); // Returns the type of Engine, might electronic or other engine
+//     3) roll
+    void rollInAnyDirection();
+
+    struct TrackRace
+    {
+        std::string raceLocation = "Frankfurt";
+        std::string typeTrackSurface = "Wood";
+        int numRacers = 2;
+        float trackwidth = 7.5f;
+        float trackLength = 250.f;
+
+        void prepareForStart(float startPosTrackLength,float startPosTrackWidthRacerOne,float startPosTrackWidthRacerTwo);
+        void raceStart (int setRounds = 2, std::string setRaceType = "Sprint");
+        std::string sprintWinner(float timeRacerOne, float timeRacerTwo, std::string nameRacerOne, std::string nameRacerTwo); //returns Name of the Winner  
+    };
+
+};
+
+struct MixingDesk
+{
+//   5 properties:
+//     1) number of channels (int)
+    int numChannels = 8;
+//     2) number of analog inputs (int)
+    int numAnalogInputs = 4;
+//     3) number of outputs (int)
+    int numOutputs = 4;
+//     4) number of eq bands per channel (int)
+    int numEQBandsChannel = 3;
+//     5) brand of  Mixer (std::string)
+    std::string brandMixer = "Soundcraft";
+// 3 things it can do:
+//     1) record instruments
+    void recordInstrument();
+//     2) filter audiosignals
+    void filterAudio();
+//     3) compress audio signals
+    void compressAudio();
+};
+
+struct ControllerKeyboard
+{
+//   5 properties:
+//     1) number of keys (int)
+    int numKeys = 36;
+//     2) number of knobs (int)
+    int numKnobs = 8;
+//     3) display size (double)
+    double sizeDisplay = 7.2;
+//     4) number of sliders (int)
+    int numSliders = 9;
+//     5) number of separate MIDI outputs (int)
+    int numMIDIOuts = 2;
+// 3 things it can do:
+//     1) control parameters of synthesizers
+    void controlParams(int numParameter, int paramValue);
+//     2) send MIDI signals to other devices 
+    void sendMIDI();
+//     3) send note on and note off commands to compatible devices  
+    void noteOn(int keyNumber, int velocityValue);
+};
+
+struct GameController
+{
+//    5 properties:
+//     1) number of analog sticks (int)
+    int numAnalogSticks = 2;
+//     2) number of inputs for headsets (int)
+    int numInputHS = 1;
+//     3) Battery capacity in mAh (int)
+    int capicityBattery = 500;
+//     4) number of shoulder buttons (int)
+    int numShoulderButtons = 2;
+//     5) width in cm (double)
+    double width = 13.5;
+// 3 things it can do:
+//     1) convert physical movements to electrical signal
+    float convertMovement(float physMovement); // returns the value of coordinates the mouse courser has to be moved
+//     2) play audio through built in speaker 
+    void playAudio(int trackID, int volume);
+//     3) connect to other person via audio 
+    bool connectTeam(std::string playerName); // returns true if connection was successful
+};
+
+struct ACAdapter
+{
+//     5 properties:
+//     1) max efficiency of rectifier in percent (double)
+    double maxEffRect = 42.5;
+//     2) strength of smoothing capacitor (int) in millifarad mF.
+    int scaleSmmoothCapacitor = 47;
+//     3) MOSFET type (std::string)
+    std::string typeMOSFET= "IRF540";
+//     4) transformer unit type (std::string)
+    std::string typeTransformer = "Ferrite";
+//     5) number of resistors (int)
+    int numResistors = 13;
+// 3 things it can do:
+//     1) convert main electrical voltage into lower voltage
+    void convMainVoltToLowerVolt(float mainVolt,float targetVolt);
+//     2) converts AC into DC
+    void convACDC();
+//     3) generates heat
+    double getTemperature(); // returns the Temperature in Celsius
+};
+
+struct DiscDrive
+{
+//     5 properties:
+//     1) loading type (std::string)
+    std::string typeLoading ="Slot";
+//     2) laser strength pulse output in mW (int)
+    int powerLaser = 7;
+//     3) electrial engine power in Watt (double)
+    double powerMotor = 1.7;
+//     4) type of disc (std::string)
+    std::string typeDisc = "DVD";
+//     5) type of internal connection (std::string)
+    std::string typeConnector ="SATA";
+// 3 things it can do:
+//     1) loads disc into drive
+    void loadDisc(std::string typeLoading);
+//     2) spin drive
+    void spinDrive(int speedDrive);
+//     3) read data of disc
+    int readData(); // returns the Data which is read
+};
+
+struct WiFiModule
+{
+//     5 properties:
+//     1) connectable via USB (bool)
+    bool connectUSB = true;
+//     2) frequency standard 5 GHz compatible (bool)
+    bool compatible5GHz = false;
+//     3) minimum signal strength in decibel milliwatts (float)
+    float minAmpSignal = -68.4f;
+//     4) needed voltage (float)
+    float minVolt = 4.5f;
+//     5) needed amperage in Milliampere (int)
+    int minAmper = 500;
+// 3 things it can do:
+//     1) send wireless digital data
+    void sendData(std::string myData);
+//     2) receive wireless digital data
+    std::string receiveData(); //returns the Data which is received
+//     3) adds WiFi compatibility to game console
+    bool installDriver(); //returns true if driver is installed and WiFi Adapter is working
+};
+
+struct FrontPanel
+{
+//   5 properties:
+//     1) does have Slot for disc tray (bool)
+    bool slotDiscTray = true;
+//     2) number of USB ports (int)
+    int numUSBPorts = 2;
+//     3) number of controller ports (int)
+    int numControllerPorts = 2;
+//     4) brand name (std::string)
+    std::string brandName = "Microsoft";
+//     5) number of ports for memory card (int)
+    int numMemPorts = 2;
+// 3 things it can do:
+//     1) it sets the visible design
+    void setDesign();
+//     2) is removable
+    bool removePanel(); // returns true if Panel was removed
+//     3) connect to different input devices 
+    std::string connectInputDevice(); // Returns the Name of the connected device
+};
+
+struct GameConsole
+{
+//     5 properties:
+//     1) game controller
+    GameController gameController;
+//     2) AC adapter
+    ACAdapter acAdapter;
+//     3) disc drive
+    DiscDrive discDrive;
+//     4) WiFi MOdule
+    WiFiModule wifiModule;
+//     5) Front Panel
+    FrontPanel frontPanel;
+// 3 things it can do:
+//     1) display Movies and Games on TV or Monitor
+    void displayDevice(std::string television);
+//     2) Output Audio
+    void playAudio(int volume);
+//     3) receive input signals from different types of Controllers
+    int controllerInput(); // returns all received values 
+};
+    
 /*
 =================
 Part 1e - Step 2: Commit
